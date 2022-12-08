@@ -1,13 +1,16 @@
-# 특정 깃헙(Angular-cli) 이슈 목록과 상세 내용을 확인하는 웹 사이트 구축
+## 특정 깃헙(Angular-cli) 이슈 목록과 상세 내용을 확인하는 웹 사이트 구축
 
-- ## 배포 링크 : [https://2nd-assignment.vercel.app/](https://2nd-assignment.vercel.app/)
-
-### STACK
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"><img src="https://img.shields.io/badge/TypeScript-3178C6.svg?&style=for-the-badge&logo==TypeScript&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"><img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=React Router&logoColor=white">
+## 배포 링크 : [바로가기 클릭](https://2nd-assignment.vercel.app/)
 
 
-<br/>
+## 실행결과
 
+<img src="https://user-images.githubusercontent.com/99943583/206370641-506812bb-70eb-4d4e-bf70-0d371a85402a.gif">
+
+#### STACK
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6.svg?&style=for-the-badge&logo==TypeScript&logoColor=white" ><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<img src="https://img.shields.io/badge/styled components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white">
+<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=React Router&logoColor=white">
 
 ## 팀 소개
 
@@ -19,7 +22,7 @@
 - [조성호](https://github.com/CSH111)
 - [전대원](https://github.com/eodnjs467)
 
-<br />
+<br>
 
 ## 프로젝트 소개 
 
@@ -27,7 +30,6 @@
 - 기간 : 2022.10.29 ~ 2022.10.30 
 - 주관 : 원티드 
 
-<br />
 
 ## 구현 사항
 
