@@ -1,23 +1,15 @@
 # 특정 깃헙(Angular-cli) 이슈 목록과 상세 내용을 확인하는 웹 사이트 구축
 
-1. [팀 소개 👫](#1-팀-소개-)
-2. [프로젝트 소개 🚀](#2-프로젝트-소개-)
-3. [기술 스택 🛠](#3-기술-스택-)
-4. [구현 기능 📍](#4-구현-기능-)
-5. [프로젝트 구조 🗂](#5-프로젝트-구조-)
-6. [Best Practice 선정과정👩‍👦‍👦](#6-best-practice-선정과정)
-7. [프로젝트 설치 및 실행 ✨](#7-프로젝트-설치-및-실행-)  
+- ## 배포 링크 : [https://2nd-assignment.vercel.app/](https://2nd-assignment.vercel.app/)
+
+### STACK
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"><img src="https://img.shields.io/badge/TypeScript-3178C6.svg?&style=for-the-badge&logo==TypeScript&logoColor=white"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"><img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=HTML5&logoColor=white"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white"><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=React Router&logoColor=white">
+
 
 <br/>
 
-- [🌍 배포 링크](https://2nd-assignment.vercel.app/)
-- [📄 팀 노션](https://plain-airboat-3f4.notion.site/10-27-Todo-f9fb2a1265e54c33b0b73c306c230042)
 
-<br />
-
-
-
-## 1. 팀 소개 👫
+## 팀 소개
 
 - [이빛나 (팀장)](https://github.com/bitnaleeeee)
 - [모상빈](https://github.com/Topbin2)
@@ -29,57 +21,58 @@
 
 <br />
 
-## 2. 프로젝트 소개 🚀
+## 프로젝트 소개 
 
-- 개요 : 원티드 프론트엔드 프리온보딩 7기 1팀 과제 1-2 중 Best Practice
-- 주제 : 특정 깃헙 레파지토리의 이슈 목록과 상세 내용을 확인하는 웹 사이트 구축
-- 기간 : 2022.10.29 ~ 2022.10.30
-
-<br />
-
-
-## 3. 기술 스택 🛠
-
-- React
-- Typescript
-- Styled-Components
+- 목표 : 특정 깃헙 레파지토리의 이슈 목록과 상세 내용을 확인하는 웹 사이트 구축
+- 기간 : 2022.10.29 ~ 2022.10.30 
+- 주관 : 원티드 
 
 <br />
 
-## 4. 구현 기능 📍
+## 구현 사항
 
-- 이슈 목록 페이지 구현
-  - 무한스크롤
-  - 광고배너 삽입
-- 상세 이슈 페이지 구현
-- Context API를 활용한 이슈 상태관리 및 API 연동
-- 데이터 요청 중 로딩 표시
-- 에러 화면 구현
-- 지정조건에 맞게 데이터 요청 및 표시
-- 반응형 웹 구현
+- [x] 이슈 목록 페이지 구현 : 무한스크롤, 광고배너 삽입
+- [x] 상세 이슈 페이지 구현
+- [x] Context API를 활용한 이슈 상태관리 및 API 연동
+- [x] 데이터 요청 중 로딩 표시
+- [x] 에러 화면 구현
+- [x] 지정조건에 맞게 데이터 요청 및 표시
+- [x] 반응형 웹 구현
+
 
 <br />
 
-## 5. 프로젝트 구조 🗂
+## 폴더 구조 
 
-```bash
-src
-├── apis  // issue 관련 api service 요청
-├── assets  // 전역 스타일링
-├── components  // 공용 컴포넌트
-├── context // issue 상태관리 context
-├── hooks // scroll 관련 커스텀 훅
-├── pages // 페이지 및 페이지 고유 컴포넌트
-├── types // 공용타입 관리
-└── utils // dateformatting, axios 관련 유틸 함수
 ```
+📦 src
+├── 📂  apis
+├── 📂  assets
+├── 📂  components
+├── 📂  context
+├── 📂  hooks
+├── 📂  pages
+├── 📂  types
+├── 📂  utils
+
+```
+
+- apis : issue 관련 api service 요청하는 폴더입니다
+- assets : 전역 스타일링 관리 폴더입니다
+- components : 공용 컴포넌트 입니다
+- context : issue 상태관리 context 폴더 입니다
+- hooks : scroll 관련 커스텀 훅 폴더입니다
+- pages : 페이지 관리 컴포넌트 입니다
+- types : 공용타입 관리 폴더 입니다
+- utils : dateformatting, axios 관련 유틸 함수 폴더입니다
+
 
 <br/>
 
 
-## 6. Best Practice 선정과정👩‍👦‍👦
+## 주요 기능
 
-  ### 선정이유 1 - 무한스크롤
+  ### 무한스크롤
   
   ```javascript
 export const useInfiniteScroll = (
@@ -108,14 +101,12 @@ export const useInfiniteScroll = (
   return [setTarget];
 };
 ```
-#### 코멘트
-  - `Intersection Opserver API` 활용해 scrollEvent를 이용한 것에 비해 최적화를 효율적으로 적용한 점이 좋았습니다. - 박우빈
-  - 재사용성을 위해 커스텀훅으로 분리한 부분이 좋았습니다. - 김진석
 
 <br>
 
-### 선정이유 2 - Context API를 활용한 API 연동
-- `Context API` `useReducer` 를 활용하여 `Flux 패턴`으로 서버 데이터 관리 
+### Context API를 활용한 API 연동
+  #### `Context API` `useReducer` 를 활용하여 `Flux 패턴`으로 서버 데이터 관리 
+
 
 ```javascript
 export enum IssueActionTypes {
@@ -200,27 +191,22 @@ export const IssueProvider = ({ children }: { children: JSX.Element }) => {
   );
 };
 ```
-#### 코멘트
-  - 단방향 데이터 흐름으로 복잡성을 줄인점이 인상적이었습니다. - 조성호
 
 <br>
 
-## 7. 프로젝트 설치 및 실행 ✨
+## 프로젝트 설치 및 실행
 
 <br/>
 
 1. Git Clone
-
 ```plaintext
 $ git clone https://github.com/pre-onboading-2team/Week1_2_Issue_List.git
 ```
 
 2. 프로젝트 패키지 설치
-
 ```plaintext
 $ npm install
 ```
-
 3. 프로젝트 실행
 
 ```plaintext
